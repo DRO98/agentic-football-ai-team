@@ -1,0 +1,9 @@
+{
+  "description": "Shooting experiment variant C (2026-10-18): replace the '~25 units' shooting line with an explicit threshold on the summary's distOppGoal and say what to do above it. 25 is the starting value under test, not a verified optimum.",
+  "replace": [
+    {
+      "old": "- SHOOT whenever you have the ball within shooting range (~25 units from goal)\n",
+      "new": "- SHOOT only when you have the ball and your distOppGoal (in the YOUR PLAYER line) is 25 or less\n- With the ball and distOppGoal above 25, do not shoot: PASS to a teammate who is clearly closer to the opponent goal with no opponent near him; if an opponent is right on you, PASS to the nearest free teammate; otherwise MOVE_TO toward the opponent goal to get into range\n"
+    }
+  ]
+}

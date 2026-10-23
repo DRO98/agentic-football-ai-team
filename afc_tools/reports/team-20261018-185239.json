@@ -1,0 +1,383 @@
+{
+  "time": "2026-10-18T18:51:50+0200",
+  "region": "us-east-1",
+  "ticks": [
+    {
+      "scenario": "fwd1_on_ball_attack",
+      "team": 0,
+      "possession": "MY player 3",
+      "agents": [
+        {
+          "agent": "gk",
+          "player": 0,
+          "session": "afc-team-bf53e8fd636a4a71aed7055e3ba1afa1",
+          "latencyS": 8.15,
+          "reply": "[{\"commandType\": \"MOVE_TO\", \"playerId\": 0, \"parameters\": {\"target_x\": -50.0, \"target_y\": 0.0, \"sprint\": false}, \"teamId\": 0}]",
+          "logGroup": "/aws/bedrock-agentcore/runtimes/TeamStrandsBalanced_ai_gk_agent-0oVjJm7SWf-DEFAULT",
+          "valid": true,
+          "reason": "ok",
+          "issues": [],
+          "captured": true,
+          "source": "model",
+          "logLine": "LLM returned 1 commands: ['MOVE_TO']"
+        },
+        {
+          "agent": "def",
+          "player": 1,
+          "session": "afc-team-ee2a346b91554a1ab3ed8c901c61a6e0",
+          "latencyS": 6.45,
+          "reply": "[{\"commandType\": \"MOVE_TO\", \"playerId\": 1, \"parameters\": {\"target_x\": 14.0, \"target_y\": -5.0, \"sprint\": false}, \"duration\": 3, \"teamId\": 0}]",
+          "logGroup": "/aws/bedrock-agentcore/runtimes/TeamStrandsBalanced_ai_def_agent-eiKvC1HDxs-DEFAULT",
+          "valid": true,
+          "reason": "ok",
+          "issues": [],
+          "source": "model",
+          "logLine": "LLM returned 1 commands: ['MOVE_TO']"
+        },
+        {
+          "agent": "mid",
+          "player": 2,
+          "session": "afc-team-cac3210a710248a18b00fe5013a64978",
+          "latencyS": 6.71,
+          "reply": "[{\"commandType\": \"MOVE_TO\", \"playerId\": 2, \"parameters\": {\"target_x\": 15.0, \"target_y\": -5.0, \"sprint\": true}, \"duration\": 0, \"teamId\": 0}]",
+          "logGroup": "/aws/bedrock-agentcore/runtimes/TeamStrandsBalanced_ai_mid_agent-xFGNv59Vfw-DEFAULT",
+          "valid": true,
+          "reason": "ok",
+          "issues": [],
+          "source": "model",
+          "logLine": "LLM returned 1 commands: ['MOVE_TO']"
+        },
+        {
+          "agent": "fwd1",
+          "player": 3,
+          "session": "afc-team-16bb50211dee48e5bd60bca05ab7f3d5",
+          "latencyS": 7.05,
+          "reply": "[{\"commandType\": \"SHOOT\", \"playerId\": 3, \"parameters\": {\"aim_location\": \"CENTER\", \"power\": 0.9}, \"duration\": 0, \"teamId\": 0}]",
+          "logGroup": "/aws/bedrock-agentcore/runtimes/TeamStrandsBalanced_ai_fwd1_agent-ay2nxx8yID-DEFAULT",
+          "valid": true,
+          "reason": "ok",
+          "issues": [],
+          "source": "model",
+          "logLine": "LLM returned 1 commands: ['SHOOT']"
+        },
+        {
+          "agent": "fwd2",
+          "player": 4,
+          "session": "afc-team-55d3e81382a8482a9c4e9ad3615a4f90",
+          "latencyS": 8.17,
+          "reply": "[{\"commandType\": \"MOVE_TO\", \"playerId\": 4, \"parameters\": {\"target_x\": 25.0, \"target_y\": 5.0, \"sprint\": true}, \"duration\": 0, \"teamId\": 0}]",
+          "logGroup": "/aws/bedrock-agentcore/runtimes/TeamStrandsBalanced_ai_fwd2_agent-EiBj9F4A3q-DEFAULT",
+          "valid": true,
+          "reason": "ok",
+          "issues": [],
+          "source": "model",
+          "logLine": "LLM returned 1 commands: ['MOVE_TO']"
+        }
+      ],
+      "maxLatencyS": 8.17,
+      "teamWarnings": []
+    },
+    {
+      "scenario": "gk_holds_ball",
+      "team": 0,
+      "possession": "MY player 0",
+      "agents": [
+        {
+          "agent": "gk",
+          "player": 0,
+          "session": "afc-team-ed6c05b224db420e9b0a7f7a30c45b9f",
+          "latencyS": 8.04,
+          "reply": "[{\"commandType\": \"GK_DISTRIBUTE\", \"playerId\": 0, \"parameters\": {\"target_player_id\": 1, \"method\": \"THROW\"}, \"duration\": 0, \"teamId\": 0}]",
+          "logGroup": "/aws/bedrock-agentcore/runtimes/TeamStrandsBalanced_ai_gk_agent-0oVjJm7SWf-DEFAULT",
+          "valid": true,
+          "reason": "ok",
+          "issues": [],
+          "captured": true,
+          "source": "model",
+          "logLine": "LLM returned 1 commands: ['GK_DISTRIBUTE']"
+        },
+        {
+          "agent": "def",
+          "player": 1,
+          "session": "afc-team-58a7b6944e4d44f5b8b0eeb3cea31160",
+          "latencyS": 5.93,
+          "reply": "[{\"commandType\": \"PRESS_BALL\", \"playerId\": 1, \"parameters\": {\"intensity\": 0.8}, \"duration\": 5, \"teamId\": 0}]",
+          "logGroup": "/aws/bedrock-agentcore/runtimes/TeamStrandsBalanced_ai_def_agent-eiKvC1HDxs-DEFAULT",
+          "valid": true,
+          "reason": "ok",
+          "issues": [],
+          "source": "model",
+          "logLine": "LLM returned 1 commands: ['PRESS_BALL']"
+        },
+        {
+          "agent": "mid",
+          "player": 2,
+          "session": "afc-team-4e6a93e3531640a0b7be0606e2c9662a",
+          "latencyS": 6.14,
+          "reply": "[{\"commandType\": \"PRESS_BALL\", \"playerId\": 2, \"parameters\": {\"intensity\": 0.8}, \"duration\": 0, \"teamId\": 0}]",
+          "logGroup": "/aws/bedrock-agentcore/runtimes/TeamStrandsBalanced_ai_mid_agent-xFGNv59Vfw-DEFAULT",
+          "valid": true,
+          "reason": "ok",
+          "issues": [],
+          "source": "model",
+          "logLine": "LLM returned 1 commands: ['PRESS_BALL']"
+        },
+        {
+          "agent": "fwd1",
+          "player": 3,
+          "session": "afc-team-cf7922b4a9d842a2bba2e0331f95fee7",
+          "latencyS": 6.62,
+          "reply": "[{\"commandType\": \"MOVE_TO\", \"playerId\": 3, \"teamId\": 0, \"parameters\": {\"target_x\": 27.5, \"target_y\": -10, \"sprint\": true}, \"duration\": 0}]",
+          "logGroup": "/aws/bedrock-agentcore/runtimes/TeamStrandsBalanced_ai_fwd1_agent-ay2nxx8yID-DEFAULT",
+          "valid": true,
+          "reason": "ok",
+          "issues": [],
+          "source": "validator_fallback",
+          "logLine": "LLM reply rejected by validator (invalid_command: unknown_key(target_team); unknown_key(distance); wrong_player(playerId): 0 but this agent controls playerId=3; missing_parameter(parameters.target_player_id); missing_parameter(parameters.target_team); missing_parameter(parameters.distance)), using f"
+        },
+        {
+          "agent": "fwd2",
+          "player": 4,
+          "session": "afc-team-168120d9c4964470be73e55514660bcf",
+          "latencyS": 6.17,
+          "reply": "[{\"commandType\": \"MOVE_TO\", \"playerId\": 4, \"parameters\": {\"target_x\": 30.0, \"target_y\": 5.0, \"sprint\": true}, \"duration\": 0, \"teamId\": 0}]",
+          "logGroup": "/aws/bedrock-agentcore/runtimes/TeamStrandsBalanced_ai_fwd2_agent-EiBj9F4A3q-DEFAULT",
+          "valid": true,
+          "reason": "ok",
+          "issues": [],
+          "source": "model",
+          "logLine": "LLM returned 1 commands: ['MOVE_TO']"
+        }
+      ],
+      "maxLatencyS": 8.04,
+      "teamWarnings": []
+    },
+    {
+      "scenario": "loose_ball_our_box",
+      "team": 0,
+      "possession": "free",
+      "agents": [
+        {
+          "agent": "gk",
+          "player": 0,
+          "session": "afc-team-a7a3d631445440cfaa0eff91a8e23186",
+          "latencyS": 5.89,
+          "reply": "[{\"commandType\": \"MOVE_TO\", \"parameters\": {\"target_x\": -50.0, \"target_y\": 0.0, \"sprint\": false}, \"teamId\": 0, \"playerId\": 0}]",
+          "logGroup": "/aws/bedrock-agentcore/runtimes/TeamStrandsBalanced_ai_gk_agent-0oVjJm7SWf-DEFAULT",
+          "valid": true,
+          "reason": "ok",
+          "issues": [],
+          "captured": true,
+          "source": "model",
+          "logLine": "LLM returned 1 commands: ['MOVE_TO']"
+        },
+        {
+          "agent": "def",
+          "player": 1,
+          "session": "afc-team-717638c94cf74fbe8ffe6f56d62d6290",
+          "latencyS": 5.93,
+          "reply": "[{\"commandType\": \"PRESS_BALL\", \"playerId\": 1, \"parameters\": {\"intensity\": 0.8}, \"duration\": 5, \"teamId\": 0}]",
+          "logGroup": "/aws/bedrock-agentcore/runtimes/TeamStrandsBalanced_ai_def_agent-eiKvC1HDxs-DEFAULT",
+          "valid": true,
+          "reason": "ok",
+          "issues": [],
+          "source": "model",
+          "logLine": "LLM returned 1 commands: ['PRESS_BALL']"
+        },
+        {
+          "agent": "mid",
+          "player": 2,
+          "session": "afc-team-5224cfad207b4d23a7ab87f5c27e81bd",
+          "latencyS": 7.58,
+          "reply": "[{\"commandType\": \"PRESS_BALL\", \"parameters\": {\"intensity\": 1.0}, \"duration\": 0, \"teamId\": 0, \"playerId\": 2}]",
+          "logGroup": "/aws/bedrock-agentcore/runtimes/TeamStrandsBalanced_ai_mid_agent-xFGNv59Vfw-DEFAULT",
+          "valid": true,
+          "reason": "ok",
+          "issues": [],
+          "source": "model",
+          "logLine": "LLM returned 1 commands: ['PRESS_BALL']"
+        },
+        {
+          "agent": "fwd1",
+          "player": 3,
+          "session": "afc-team-afc0056728df4aafb977325f80a963ee",
+          "latencyS": 7.61,
+          "reply": "[{\"commandType\": \"MOVE_TO\", \"playerId\": 3, \"parameters\": {\"target_x\": 14.0, \"target_y\": -10.0, \"sprint\": true}, \"teamId\": 0}]",
+          "logGroup": "/aws/bedrock-agentcore/runtimes/TeamStrandsBalanced_ai_fwd1_agent-ay2nxx8yID-DEFAULT",
+          "valid": true,
+          "reason": "ok",
+          "issues": [],
+          "source": "model",
+          "logLine": "LLM returned 1 commands: ['MOVE_TO']"
+        },
+        {
+          "agent": "fwd2",
+          "player": 4,
+          "session": "afc-team-50815d8bbe9744489535b691dcc75d83",
+          "latencyS": 7.62,
+          "reply": "[{\"commandType\": \"MOVE_TO\", \"playerId\": 4, \"parameters\": {\"target_x\": 20.0, \"target_y\": 25.0, \"sprint\": true}, \"duration\": 0, \"teamId\": 0}]",
+          "logGroup": "/aws/bedrock-agentcore/runtimes/TeamStrandsBalanced_ai_fwd2_agent-EiBj9F4A3q-DEFAULT",
+          "valid": true,
+          "reason": "ok",
+          "issues": [],
+          "source": "model",
+          "logLine": "LLM returned 1 commands: ['MOVE_TO']"
+        }
+      ],
+      "maxLatencyS": 7.62,
+      "teamWarnings": []
+    },
+    {
+      "scenario": "opponent_attack",
+      "team": 0,
+      "possession": "OPP player 3",
+      "agents": [
+        {
+          "agent": "gk",
+          "player": 0,
+          "session": "afc-team-b5da766e43ac4886918695e14d97f6dc",
+          "latencyS": 7.49,
+          "reply": "[{\"commandType\": \"MOVE_TO\", \"playerId\": 0, \"parameters\": {\"target_x\": -50.0, \"target_y\": 0.0, \"sprint\": false}, \"duration\": 0, \"teamId\": 0}]",
+          "logGroup": "/aws/bedrock-agentcore/runtimes/TeamStrandsBalanced_ai_gk_agent-0oVjJm7SWf-DEFAULT",
+          "valid": true,
+          "reason": "ok",
+          "issues": [],
+          "captured": true,
+          "source": "model",
+          "logLine": "LLM returned 1 commands: ['MOVE_TO']"
+        },
+        {
+          "agent": "def",
+          "player": 1,
+          "session": "afc-team-8d710eba0cba4f1990500cfcd974690c",
+          "latencyS": 7.56,
+          "reply": "[{\"commandType\": \"PRESS_BALL\", \"playerId\": 1, \"parameters\": {\"intensity\": 0.8}, \"duration\": 5, \"teamId\": 0}]",
+          "logGroup": "/aws/bedrock-agentcore/runtimes/TeamStrandsBalanced_ai_def_agent-eiKvC1HDxs-DEFAULT",
+          "valid": true,
+          "reason": "ok",
+          "issues": [],
+          "source": "model",
+          "logLine": "LLM returned 1 commands: ['PRESS_BALL']"
+        },
+        {
+          "agent": "mid",
+          "player": 2,
+          "session": "afc-team-b61b0b02775e42b58f1867a91cb69b1b",
+          "latencyS": 6.01,
+          "reply": "[{\"commandType\": \"PRESS_BALL\", \"playerId\": 2, \"parameters\": {\"intensity\": 0.8}, \"duration\": 0, \"teamId\": 0}]",
+          "logGroup": "/aws/bedrock-agentcore/runtimes/TeamStrandsBalanced_ai_mid_agent-xFGNv59Vfw-DEFAULT",
+          "valid": true,
+          "reason": "ok",
+          "issues": [],
+          "source": "model",
+          "logLine": "LLM returned 1 commands: ['PRESS_BALL']"
+        },
+        {
+          "agent": "fwd1",
+          "player": 3,
+          "session": "afc-team-7eb6912d34044425b9f5ced6528f0a9a",
+          "latencyS": 7.67,
+          "reply": "[{\"commandType\": \"MOVE_TO\", \"playerId\": 3, \"parameters\": {\"target_x\": 20.0, \"target_y\": -5.0, \"sprint\": false}, \"teamId\": 0}]",
+          "logGroup": "/aws/bedrock-agentcore/runtimes/TeamStrandsBalanced_ai_fwd1_agent-ay2nxx8yID-DEFAULT",
+          "valid": true,
+          "reason": "ok",
+          "issues": [],
+          "source": "model",
+          "logLine": "LLM returned 1 commands: ['MOVE_TO']"
+        },
+        {
+          "agent": "fwd2",
+          "player": 4,
+          "session": "afc-team-2f431a0f7dc04086811fe9ac8e266ba7",
+          "latencyS": 5.97,
+          "reply": "[{\"commandType\": \"MOVE_TO\", \"playerId\": 4, \"teamId\": 0, \"parameters\": {\"target_x\": 22.0, \"target_y\": 8, \"sprint\": false}, \"duration\": 0}]",
+          "logGroup": "/aws/bedrock-agentcore/runtimes/TeamStrandsBalanced_ai_fwd2_agent-EiBj9F4A3q-DEFAULT",
+          "valid": true,
+          "reason": "ok",
+          "issues": [],
+          "source": "validator_fallback",
+          "logLine": "LLM reply rejected by validator (invalid_command: out_of_range(duration): -1 < 0), using fallback. Response: ```json\n[\n    {\n        \"commandType\": \"PRESS_BALL\",\n        \"playerId\": 4,\n        \"parameters\": {\n            \"intensity\": 1.0\n        },\n        \"duration\": -1\n    }\n]\n```\n"
+        }
+      ],
+      "maxLatencyS": 7.67,
+      "teamWarnings": []
+    },
+    {
+      "scenario": "sample_as_away_team",
+      "team": 1,
+      "possession": "OPP player 3",
+      "agents": [
+        {
+          "agent": "gk",
+          "player": 0,
+          "session": "afc-team-4988fcfa904f4c76bdb31e5883e3642d",
+          "latencyS": 6.02,
+          "reply": "[{\"commandType\": \"MOVE_TO\", \"playerId\": 0, \"parameters\": {\"target_x\": 50.0, \"target_y\": 0.0, \"sprint\": false}, \"teamId\": 1}]",
+          "logGroup": "/aws/bedrock-agentcore/runtimes/TeamStrandsBalanced_ai_gk_agent-0oVjJm7SWf-DEFAULT",
+          "valid": true,
+          "reason": "ok",
+          "issues": [],
+          "captured": true,
+          "source": "model",
+          "logLine": "LLM returned 1 commands: ['MOVE_TO']"
+        },
+        {
+          "agent": "def",
+          "player": 1,
+          "session": "afc-team-4df6a5eccebc4a35a7ac6b2c2d4f2f4e",
+          "latencyS": 7.75,
+          "reply": "[{\"commandType\": \"PRESS_BALL\", \"playerId\": 1, \"parameters\": {\"intensity\": 0.8}, \"duration\": 5, \"teamId\": 1}]",
+          "logGroup": "/aws/bedrock-agentcore/runtimes/TeamStrandsBalanced_ai_def_agent-eiKvC1HDxs-DEFAULT",
+          "valid": true,
+          "reason": "ok",
+          "issues": [],
+          "source": "model",
+          "logLine": "LLM returned 1 commands: ['PRESS_BALL']"
+        },
+        {
+          "agent": "mid",
+          "player": 2,
+          "session": "afc-team-41ba07d5d1584af28c1a4b1302077996",
+          "latencyS": 6.18,
+          "reply": "[{\"commandType\": \"PRESS_BALL\", \"playerId\": 2, \"parameters\": {\"intensity\": 0.8}, \"duration\": 0, \"teamId\": 1}]",
+          "logGroup": "/aws/bedrock-agentcore/runtimes/TeamStrandsBalanced_ai_mid_agent-xFGNv59Vfw-DEFAULT",
+          "valid": true,
+          "reason": "ok",
+          "issues": [],
+          "source": "model",
+          "logLine": "LLM returned 1 commands: ['PRESS_BALL']"
+        },
+        {
+          "agent": "fwd1",
+          "player": 3,
+          "session": "afc-team-1b019805705f4e4db6a3b27f7ff73c9c",
+          "latencyS": 7.53,
+          "reply": "[{\"commandType\": \"PRESS_BALL\", \"playerId\": 3, \"parameters\": {\"intensity\": 1.0}, \"teamId\": 1}]",
+          "logGroup": "/aws/bedrock-agentcore/runtimes/TeamStrandsBalanced_ai_fwd1_agent-ay2nxx8yID-DEFAULT",
+          "valid": true,
+          "reason": "ok",
+          "issues": [],
+          "source": "model",
+          "logLine": "LLM returned 1 commands: ['PRESS_BALL']"
+        },
+        {
+          "agent": "fwd2",
+          "player": 4,
+          "session": "afc-team-8adb80a91b6c43608de89e1f2501cffb",
+          "latencyS": 7.54,
+          "reply": "[{\"commandType\": \"MOVE_TO\", \"playerId\": 4, \"teamId\": 1, \"parameters\": {\"target_x\": -22.0, \"target_y\": 8, \"sprint\": false}, \"duration\": 0}]",
+          "logGroup": "/aws/bedrock-agentcore/runtimes/TeamStrandsBalanced_ai_fwd2_agent-EiBj9F4A3q-DEFAULT",
+          "valid": true,
+          "reason": "ok",
+          "issues": [],
+          "source": "validator_fallback",
+          "logLine": "LLM reply rejected by validator (invalid_command: out_of_range(duration): -1 < 0), using fallback. Response: ```json\n[\n    {\n        \"commandType\": \"PRESS_BALL\",\n        \"playerId\": 4,\n        \"parameters\": {\n            \"intensity\": 0.9\n        },\n        \"duration\": -1\n    }\n]\n```\n"
+        }
+      ],
+      "maxLatencyS": 7.75,
+      "teamWarnings": [
+        "3 players sent to the ball: [1, 2, 3]"
+      ]
+    }
+  ]
+}

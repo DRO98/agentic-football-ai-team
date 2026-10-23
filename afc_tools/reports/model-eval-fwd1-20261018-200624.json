@@ -1,0 +1,129 @@
+{
+ "position": "fwd1",
+ "region": "us-east-1",
+ "seed": 1,
+ "reps": 3,
+ "plannedCalls": 108,
+ "callsMade": 108,
+ "httpRequests": 108,
+ "estimatedUSD": 0.006104084999999999,
+ "stopped": null,
+ "summary": {
+  "micro/current": {
+   "calls": 27,
+   "apiErrors": 0,
+   "parsedPct": 100.0,
+   "acceptedPct": 96.29629629629629,
+   "fallbackPct": 3.7037037037037037,
+   "protocolErrors": 1,
+   "possessionRejections": 0,
+   "rejectionCodes": {
+    "unknown_key": 3,
+    "wrong_player": 1,
+    "missing_parameter": 3
+   },
+   "longShots": 3,
+   "shots": 6,
+   "betterTeammateShots": 0,
+   "supportRuns": "3/9",
+   "defendOwnBall": 0,
+   "wallP50": 0.543,
+   "wallP95": 0.744,
+   "bedrockMsP50": 431,
+   "inTokMean": 1030.6666666666667,
+   "outTokMean": 39.592592592592595,
+   "usd": 0.0011236400000000002,
+   "commands": {
+    "SHOOT": 6,
+    "MOVE_TO": 16,
+    "PRESS_BALL": 1,
+    "FOLLOW_PLAYER": 3,
+    "(rejected:FOLLOW_PLAYER)": 1
+   }
+  },
+  "micro/deployed": {
+   "calls": 27,
+   "apiErrors": 0,
+   "parsedPct": 100.0,
+   "acceptedPct": 96.29629629629629,
+   "fallbackPct": 3.7037037037037037,
+   "protocolErrors": 1,
+   "possessionRejections": 0,
+   "rejectionCodes": {
+    "unknown_key": 2,
+    "wrong_player": 1,
+    "missing_parameter": 3
+   },
+   "longShots": 3,
+   "shots": 6,
+   "betterTeammateShots": 0,
+   "supportRuns": "4/8",
+   "defendOwnBall": 0,
+   "wallP50": 0.527,
+   "wallP95": 0.622,
+   "bedrockMsP50": 419,
+   "inTokMean": 994.7307692307693,
+   "outTokMean": 35.84615384615385,
+   "usd": 0.0010356850000000002,
+   "commands": {
+    "SHOOT": 6,
+    "MOVE_TO": 16,
+    "PRESS_BALL": 3,
+    "(rejected:FOLLOW_PLAYER)": 1,
+    "FOLLOW_PLAYER": 1
+   }
+  },
+  "lite/current": {
+   "calls": 27,
+   "apiErrors": 0,
+   "parsedPct": 100.0,
+   "acceptedPct": 100.0,
+   "fallbackPct": 0.0,
+   "protocolErrors": 0,
+   "possessionRejections": 0,
+   "rejectionCodes": {},
+   "longShots": 3,
+   "shots": 6,
+   "betterTeammateShots": 0,
+   "supportRuns": "5/9",
+   "defendOwnBall": 0,
+   "wallP50": 0.679,
+   "wallP95": 0.907,
+   "bedrockMsP50": 506,
+   "inTokMean": 1030.7692307692307,
+   "outTokMean": 61.69230769230769,
+   "usd": 0.00199296,
+   "commands": {
+    "SHOOT": 6,
+    "MOVE_TO": 14,
+    "PRESS_BALL": 7
+   }
+  },
+  "lite/deployed": {
+   "calls": 27,
+   "apiErrors": 0,
+   "parsedPct": 100.0,
+   "acceptedPct": 100.0,
+   "fallbackPct": 0.0,
+   "protocolErrors": 0,
+   "possessionRejections": 0,
+   "rejectionCodes": {},
+   "longShots": 3,
+   "shots": 6,
+   "betterTeammateShots": 0,
+   "supportRuns": "4/9",
+   "defendOwnBall": 0,
+   "wallP50": 0.659,
+   "wallP95": 1.048,
+   "bedrockMsP50": 525,
+   "inTokMean": 994.6923076923077,
+   "outTokMean": 64.11538461538461,
+   "usd": 0.0019518,
+   "commands": {
+    "SHOOT": 6,
+    "MOVE_TO": 13,
+    "PRESS_BALL": 8
+   }
+  }
+ }
+}

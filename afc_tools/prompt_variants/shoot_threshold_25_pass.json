@@ -1,0 +1,9 @@
+{
+  "description": "Shooting experiment variant C2 (2026-10-18): C (no SHOOT above distOppGoal 25) plus ordered passing guidance. Uses only what the summary shows a forward: its own distOppGoal, teammates' and opponents' (x, y), opponents' distToMe, the opponent goal x. Teammates' distance to goal and marking are NOT in the summary: the model has to judge them from coordinates.",
+  "replace": [
+    {
+      "old": "- SHOOT whenever you have the ball within shooting range (~25 units from goal)\n",
+      "new": "- SHOOT only when you have the ball and your distOppGoal (in the YOUR PLAYER line) is 25 or less\n- With the ball and distOppGoal above 25, do not shoot. Decide in this order:\n  1. If a teammate is clearly better placed (his x is much closer to the opponent goal x than yours, and no opponent position is within about 5 units of him), PASS to him (parameters.target_player_id)\n  2. If an opponent is right on you (his distToMe is under 3), PASS to a free teammate who is level with you or ahead of you (his x is equal to yours or closer to the opponent goal)\n  3. Do not pass back to the GK (id 0) or to P1 (id 1, the defender) unless there is no other reasonable option\n  4. If there is no useful pass, MOVE_TO toward the opponent goal to get into range\n"
+    }
+  ]
+}

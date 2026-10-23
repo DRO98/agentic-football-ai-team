@@ -1,0 +1,167 @@
+{
+  "time": "2026-10-18T21:11:30+0200",
+  "region": "us-east-1",
+  "stack": "AgentCore-TeamStrandsBalanced-default",
+  "results": [
+    {
+      "agent": "gk",
+      "player": 0,
+      "team": 0,
+      "runtimeArn": "arn:aws:bedrock-agentcore:us-east-1:<PERSONAL_ACCOUNT_ID>:runtime/TeamStrandsBalanced_ai_gk_agent-0oVjJm7SWf",
+      "payloadSha256": "c4036130a46453fe",
+      "latencyS": 8.6,
+      "statusCode": 200,
+      "contentType": "text/event-stream; charset=utf-8",
+      "reply": "[{\"commandType\": \"MOVE_TO\", \"parameters\": {\"target_x\": -50.0, \"target_y\": 0.0, \"sprint\": false}, \"teamId\": 0, \"playerId\": 0}]",
+      "valid": true,
+      "reason": "ok",
+      "issues": [],
+      "commands": [
+        {
+          "commandType": "MOVE_TO",
+          "parameters": {
+            "target_x": -50.0,
+            "target_y": 0.0,
+            "sprint": false
+          },
+          "teamId": 0,
+          "playerId": 0
+        }
+      ],
+      "source": "model",
+      "logEvidence": [
+        "{\"timestamp\": \"2026-10-18T19:11:38.354Z\", \"level\": \"INFO\", \"message\": \"LLM returned 1 commands: ['MOVE_TO']\", \"logger\": \"bedrock_agentcore.app\", \"requestId\": \"15813049-3b8f-4e5a-b8eb-120defb3f195\", \"sessionId\": \"afc-e2e-d4497b2b925d4814b1f2d23959bd947e\"}",
+        "{\"resource\":{\"attributes\":{\"telemetry.sdk.language\":\"python\",\"telemetry.sdk.name\":\"opentelemetry\",\"telemetry.sdk.version\":\"1.44.0\",\"service.instance.id\":\"411b2430-a9df-47b8-b9d8-f2ec43f63695\",\"service.name\":\"TeamStrandsBalanced_ai_gk_agent.DEFAULT\",\"aws.log.group.names\":\"/aws/bedrock-agentcore/runti"
+      ]
+    },
+    {
+      "agent": "def",
+      "player": 1,
+      "team": 0,
+      "runtimeArn": "arn:aws:bedrock-agentcore:us-east-1:<PERSONAL_ACCOUNT_ID>:runtime/TeamStrandsBalanced_ai_def_agent-eiKvC1HDxs",
+      "payloadSha256": "09e0016a74dd03d4",
+      "latencyS": 6.65,
+      "statusCode": 200,
+      "contentType": "text/event-stream; charset=utf-8",
+      "reply": "[{\"commandType\": \"MOVE_TO\", \"playerId\": 1, \"parameters\": {\"target_x\": 15.3, \"target_y\": -5.2, \"sprint\": false}, \"duration\": 5, \"teamId\": 0}]",
+      "valid": true,
+      "reason": "ok",
+      "issues": [],
+      "commands": [
+        {
+          "commandType": "MOVE_TO",
+          "playerId": 1,
+          "parameters": {
+            "target_x": 15.3,
+            "target_y": -5.2,
+            "sprint": false
+          },
+          "duration": 5,
+          "teamId": 0
+        }
+      ],
+      "source": "model",
+      "logEvidence": [
+        "{\"timestamp\": \"2026-10-18T19:11:46.065Z\", \"level\": \"INFO\", \"message\": \"LLM returned 1 commands: ['MOVE_TO']\", \"logger\": \"bedrock_agentcore.app\", \"requestId\": \"c763ebef-3b51-4980-93ba-451bbd7e7908\", \"sessionId\": \"afc-e2e-3e0c852835e74fe1af8c0383b87134c9\"}",
+        "2026-10-18 19:11:46,065 INFO [bedrock_agentcore.app] [agent_base.py:150] [trace_id=6ad519eb25518515056d903419954155 span_id=c5c3f46f5c303645 resource.service.name=TeamStrandsBalanced_ai_def_agent.DEFAULT trace_sampled=True] - LLM returned 1 commands: ['MOVE_TO']"
+      ]
+    },
+    {
+      "agent": "mid",
+      "player": 2,
+      "team": 0,
+      "runtimeArn": "arn:aws:bedrock-agentcore:us-east-1:<PERSONAL_ACCOUNT_ID>:runtime/TeamStrandsBalanced_ai_mid_agent-xFGNv59Vfw",
+      "payloadSha256": "6a548975e9198358",
+      "latencyS": 7.47,
+      "statusCode": 200,
+      "contentType": "text/event-stream; charset=utf-8",
+      "reply": "[{\"commandType\": \"MOVE_TO\", \"playerId\": 2, \"parameters\": {\"target_x\": 10.0, \"target_y\": 0.0, \"sprint\": false}, \"duration\": 0, \"teamId\": 0}]",
+      "valid": true,
+      "reason": "ok",
+      "issues": [],
+      "commands": [
+        {
+          "commandType": "MOVE_TO",
+          "playerId": 2,
+          "parameters": {
+            "target_x": 10.0,
+            "target_y": 0.0,
+            "sprint": false
+          },
+          "duration": 0,
+          "teamId": 0
+        }
+      ],
+      "source": "model",
+      "logEvidence": [
+        "{\"resource\":{\"attributes\":{\"telemetry.sdk.language\":\"python\",\"telemetry.sdk.name\":\"opentelemetry\",\"telemetry.sdk.version\":\"1.44.0\",\"service.instance.id\":\"09279fbd-21c3-4a6d-92c0-f3be19dd24a1\",\"service.name\":\"TeamStrandsBalanced_ai_mid_agent.DEFAULT\",\"aws.log.group.names\":\"/aws/bedrock-agentcore/runt",
+        "{\"timestamp\": \"2026-10-18T19:11:54.552Z\", \"level\": \"INFO\", \"message\": \"LLM returned 1 commands: ['MOVE_TO']\", \"logger\": \"bedrock_agentcore.app\", \"requestId\": \"78f6fdda-5438-4ab0-b022-fdbbc3a6e614\", \"sessionId\": \"afc-e2e-98f799c1873d42f0a13495da21eb9857\"}",
+        "2026-10-18 19:11:54,552 INFO [bedrock_agentcore.app] [agent_base.py:150] [trace_id=6ad519f3667b0cbb035a5ee9575cdb57 span_id=fa8916bcd0129013 resource.service.name=TeamStrandsBalanced_ai_mid_agent.DEFAULT trace_sampled=True] - LLM returned 1 commands: ['MOVE_TO']"
+      ]
+    },
+    {
+      "agent": "fwd1",
+      "player": 3,
+      "team": 0,
+      "runtimeArn": "arn:aws:bedrock-agentcore:us-east-1:<PERSONAL_ACCOUNT_ID>:runtime/TeamStrandsBalanced_ai_fwd1_agent-ay2nxx8yID",
+      "payloadSha256": "a465056e74e75301",
+      "latencyS": 8.4,
+      "statusCode": 200,
+      "contentType": "text/event-stream; charset=utf-8",
+      "reply": "[{\"commandType\": \"MOVE_TO\", \"playerId\": 3, \"parameters\": {\"target_x\": 20.0, \"target_y\": 15.0, \"sprint\": true}, \"duration\": 0, \"teamId\": 0}]",
+      "valid": true,
+      "reason": "ok",
+      "issues": [],
+      "commands": [
+        {
+          "commandType": "MOVE_TO",
+          "playerId": 3,
+          "parameters": {
+            "target_x": 20.0,
+            "target_y": 15.0,
+            "sprint": true
+          },
+          "duration": 0,
+          "teamId": 0
+        }
+      ],
+      "source": "model",
+      "logEvidence": [
+        "{\"resource\":{\"attributes\":{\"telemetry.sdk.language\":\"python\",\"telemetry.sdk.name\":\"opentelemetry\",\"telemetry.sdk.version\":\"1.44.0\",\"service.instance.id\":\"831b34da-7423-46d2-a552-9f0d4e40713d\",\"service.name\":\"TeamStrandsBalanced_ai_fwd1_agent.DEFAULT\",\"aws.log.group.names\":\"/aws/bedrock-agentcore/run",
+        "{\"timestamp\": \"2026-10-18T19:12:09.425Z\", \"level\": \"INFO\", \"message\": \"LLM returned 1 commands: ['MOVE_TO']\", \"logger\": \"bedrock_agentcore.app\", \"requestId\": \"e2118be9-c8ac-4afe-afb5-9bc5b638052c\", \"sessionId\": \"afc-e2e-de438a66975640f29b30f83ec5bb34fd\"}",
+        "2026-10-18 19:12:09,425 INFO [bedrock_agentcore.app] [agent_base.py:150] [trace_id=6ad51a012ab00bed6bac2fbc4e54e0a4 span_id=367db311f4183fd6 resource.service.name=TeamStrandsBalanced_ai_fwd1_agent.DEFAULT trace_sampled=True] - LLM returned 1 commands: ['MOVE_TO']"
+      ]
+    },
+    {
+      "agent": "fwd2",
+      "player": 4,
+      "team": 0,
+      "runtimeArn": "arn:aws:bedrock-agentcore:us-east-1:<PERSONAL_ACCOUNT_ID>:runtime/TeamStrandsBalanced_ai_fwd2_agent-EiBj9F4A3q",
+      "payloadSha256": "58c2486cc12bd090",
+      "latencyS": 6.14,
+      "statusCode": 200,
+      "contentType": "text/event-stream; charset=utf-8",
+      "reply": "[{\"commandType\": \"MOVE_TO\", \"playerId\": 4, \"parameters\": {\"target_x\": 25.0, \"target_y\": 5.0, \"sprint\": true}, \"duration\": 0, \"teamId\": 0}]",
+      "valid": true,
+      "reason": "ok",
+      "issues": [],
+      "commands": [
+        {
+          "commandType": "MOVE_TO",
+          "playerId": 4,
+          "parameters": {
+            "target_x": 25.0,
+            "target_y": 5.0,
+            "sprint": true
+          },
+          "duration": 0,
+          "teamId": 0
+        }
+      ],
+      "source": "model",
+      "logEvidence": [
+        "{\"resource\":{\"attributes\":{\"telemetry.sdk.language\":\"python\",\"telemetry.sdk.name\":\"opentelemetry\",\"telemetry.sdk.version\":\"1.44.0\",\"service.instance.id\":\"75506879-345f-44d4-ae50-bb5766b2d0ea\",\"service.name\":\"TeamStrandsBalanced_ai_fwd2_agent.DEFAULT\",\"aws.log.group.names\":\"/aws/bedrock-agentcore/run"
+      ]
+    }
+  ]
+}

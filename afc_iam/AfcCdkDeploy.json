@@ -1,0 +1,56 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "UseCdkBootstrapRoles",
+      "Effect": "Allow",
+      "Action": "sts:AssumeRole",
+      "Resource": [
+        "arn:aws:iam::<PERSONAL_ACCOUNT_ID>:role/cdk-hnb659fds-deploy-role-<PERSONAL_ACCOUNT_ID>-us-east-1",
+        "arn:aws:iam::<PERSONAL_ACCOUNT_ID>:role/cdk-hnb659fds-file-publishing-role-<PERSONAL_ACCOUNT_ID>-us-east-1",
+        "arn:aws:iam::<PERSONAL_ACCOUNT_ID>:role/cdk-hnb659fds-image-publishing-role-<PERSONAL_ACCOUNT_ID>-us-east-1",
+        "arn:aws:iam::<PERSONAL_ACCOUNT_ID>:role/cdk-hnb659fds-lookup-role-<PERSONAL_ACCOUNT_ID>-us-east-1"
+      ]
+    },
+    {
+      "Sid": "AppStackDiagnostics",
+      "Effect": "Allow",
+      "Action": [
+        "cloudformation:DescribeStackEvents",
+        "cloudformation:DescribeStackResources",
+        "cloudformation:GetTemplate"
+      ],
+      "Resource": "arn:aws:cloudformation:us-east-1:<PERSONAL_ACCOUNT_ID>:stack/AgentCore-TeamStrandsBalanced-default/*"
+    },
+    {
+      "Sid": "TeamRuntimesReadAndInvoke",
+      "Effect": "Allow",
+      "Action": [
+        "bedrock-agentcore:GetAgentRuntime",
+        "bedrock-agentcore:GetAgentRuntimeEndpoint",
+        "bedrock-agentcore:ListAgentRuntimeEndpoints",
+        "bedrock-agentcore:ListAgentRuntimeVersions",
+        "bedrock-agentcore:InvokeAgentRuntime"
+      ],
+      "Resource": "arn:aws:bedrock-agentcore:us-east-1:<PERSONAL_ACCOUNT_ID>:runtime/TeamStrandsBalanced_*"
+    },
+    {
+      "Sid": "RuntimeLogsRead",
+      "Effect": "Allow",
+      "Action": [
+        "logs:DescribeLogStreams",
+        "logs:FilterLogEvents",
+        "logs:GetLogEvents",
+        "logs:StartLiveTail",
+        "logs:StopLiveTail"
+      ],
+      "Resource": "arn:aws:logs:us-east-1:<PERSONAL_ACCOUNT_ID>:log-group:/aws/bedrock-agentcore/runtimes/*"
+    },
+    {
+      "Sid": "LogGroupsList",
+      "Effect": "Allow",
+      "Action": "logs:DescribeLogGroups",
+      "Resource": "*"
+    }
+  ]
+}

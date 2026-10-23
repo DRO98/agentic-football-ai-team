@@ -1,0 +1,17 @@
+{
+  "description": "FWD2 only (2026-10-18): C + the id-to-role section + an explicit under-pressure rule naming Forward 1 (id 3) and MID (id 2). The pass target goes in parameters.target_player_id; the command's own playerId stays 4 (the existing protocol line). C's 'if an opponent is right on you, PASS to the nearest free teammate' clause is replaced by the pressure rule, and FWD2's original 'PASS to Forward 1 or Midfielder if you're under pressure' line is replaced too, so no two instructions disagree.",
+  "replace": [
+    {
+      "old": "- SHOOT whenever you have the ball within shooting range (~25 units from goal)\n",
+      "new": "- SHOOT only when you have the ball and your distOppGoal (in the YOUR PLAYER line) is 25 or less\n- With the ball and distOppGoal above 25, do not shoot: PASS to a teammate who is clearly closer to the opponent goal with no opponent near him; otherwise MOVE_TO toward the opponent goal to get into range (under pressure, follow the Under pressure rule below)\n"
+    },
+    {
+      "old": "- PASS to Forward 1 or Midfielder if you're under pressure\n",
+      "new": "- Under pressure (an opponent's distToMe is under 3) with distOppGoal above 25: do not shoot. Consider a PASS to Forward 1 (id 3) or the MID (id 2), even if he is slightly behind you, when no opponent is close to him; put his id in parameters.target_player_id. If neither pass is reasonable, MOVE_TO away from the pressure toward the opponent goal instead\n"
+    },
+    {
+      "old": "## Available Commands (commandType → parameters)\n",
+      "new": "## Player ids (same on both teams)\n- 0 = GK, 1 = DEF (defender), 2 = MID (midfielder), 3 = Forward 1, 4 = Forward 2\n- In the summary your teammates appear as GK(id=0), P1(id=1) = DEF, P2(id=2) = MID, P3(id=3) = Forward 1, P4(id=4) = Forward 2\n\n## Available Commands (commandType → parameters)\n"
+    }
+  ]
+}

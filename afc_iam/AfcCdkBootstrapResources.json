@@ -1,0 +1,96 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "BootstrapStackDeleteAfterFailedCreate",
+      "Effect": "Allow",
+      "Action": "cloudformation:DeleteStack",
+      "Resource": "arn:aws:cloudformation:us-east-1:<PERSONAL_ACCOUNT_ID>:stack/CDKToolkit/*"
+    },
+    {
+      "Sid": "BootstrapRoles",
+      "Effect": "Allow",
+      "Action": [
+        "iam:CreateRole",
+        "iam:GetRole",
+        "iam:TagRole",
+        "iam:UntagRole",
+        "iam:UpdateAssumeRolePolicy",
+        "iam:PutRolePolicy",
+        "iam:GetRolePolicy",
+        "iam:DeleteRolePolicy",
+        "iam:ListRolePolicies",
+        "iam:ListAttachedRolePolicies",
+        "iam:DeleteRole"
+      ],
+      "Resource": "arn:aws:iam::<PERSONAL_ACCOUNT_ID>:role/cdk-hnb659fds-*-<PERSONAL_ACCOUNT_ID>-us-east-1"
+    },
+    {
+      "Sid": "BootstrapRoleManagedPoliciesOnlyThese",
+      "Effect": "Allow",
+      "Action": [
+        "iam:AttachRolePolicy",
+        "iam:DetachRolePolicy"
+      ],
+      "Resource": "arn:aws:iam::<PERSONAL_ACCOUNT_ID>:role/cdk-hnb659fds-*-<PERSONAL_ACCOUNT_ID>-us-east-1",
+      "Condition": {
+        "ArnEquals": {
+          "iam:PolicyARN": [
+            "arn:aws:iam::aws:policy/ReadOnlyAccess",
+            "arn:aws:iam::aws:policy/AWSCloudFormationReadOnlyAccess",
+            "arn:aws:iam::<PERSONAL_ACCOUNT_ID>:policy/AfcCfnExecAgentCore"
+          ]
+        }
+      }
+    },
+    {
+      "Sid": "BootstrapAssetBucket",
+      "Effect": "Allow",
+      "Action": [
+        "s3:CreateBucket",
+        "s3:DeleteBucket",
+        "s3:ListBucket",
+        "s3:GetBucketAcl",
+        "s3:PutBucketAcl",
+        "s3:PutBucketOwnershipControls",
+        "s3:PutBucketTagging",
+        "s3:PutEncryptionConfiguration",
+        "s3:PutBucketVersioning",
+        "s3:PutLifecycleConfiguration",
+        "s3:PutBucketPublicAccessBlock",
+        "s3:GetBucketPolicy",
+        "s3:PutBucketPolicy",
+        "s3:DeleteBucketPolicy"
+      ],
+      "Resource": "arn:aws:s3:::cdk-hnb659fds-assets-<PERSONAL_ACCOUNT_ID>-us-east-1"
+    },
+    {
+      "Sid": "BootstrapContainerRepository",
+      "Effect": "Allow",
+      "Action": [
+        "ecr:CreateRepository",
+        "ecr:DescribeRepositories",
+        "ecr:DeleteRepository",
+        "ecr:PutLifecyclePolicy",
+        "ecr:SetRepositoryPolicy",
+        "ecr:PutImageTagMutability",
+        "ecr:PutImageScanningConfiguration",
+        "ecr:TagResource",
+        "ecr:UntagResource"
+      ],
+      "Resource": "arn:aws:ecr:us-east-1:<PERSONAL_ACCOUNT_ID>:repository/cdk-hnb659fds-container-assets-<PERSONAL_ACCOUNT_ID>-us-east-1"
+    },
+    {
+      "Sid": "BootstrapVersionParameter",
+      "Effect": "Allow",
+      "Action": [
+        "ssm:PutParameter",
+        "ssm:GetParameters",
+        "ssm:AddTagsToResource",
+        "ssm:RemoveTagsFromResource",
+        "ssm:DeleteParameter"
+      ],
+      "Resource": "arn:aws:ssm:us-east-1:<PERSONAL_ACCOUNT_ID>:parameter/cdk-bootstrap/hnb659fds/version"
+    }
+  ]
+}

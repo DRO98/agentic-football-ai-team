@@ -1,0 +1,17 @@
+{
+  "description": "DEF shape, the user's spec as written (2026-10-22): slide only in our defensive third, and with our ball hold a central spot ~15 behind the most advanced teammate. Replaces the slide bullet and the hold-shape bullet; the command list's slide description gets the same restriction.",
+  "replace": [
+    {
+      "old": "- SLIDE_TACKLE as a last resort when an opponent threatens your goal and is close\n",
+      "new": "- SLIDE_TACKLE only in your own defensive third, at an opponent close to your goal. Never slide at a player in the opponent's half, on the sideline, or in the opponent's corner.\n"
+    },
+    {
+      "old": "- Hold your defensive shape; don't chase the ball into the opponent's half\n",
+      "new": "- When your team has the ball, MOVE_TO a central spot about 15 units closer to your own goal than your most advanced teammate, with target_y at 0. Do not follow the ball, a wide teammate, or a wide opponent to the wing or the opponent's corner.\n"
+    },
+    {
+      "old": "distance (float) — risky aggressive tackle\n",
+      "new": "distance (float) — only in your own defensive third, opponent close to your goal, never the opponent's wing or corner\n"
+    }
+  ]
+}

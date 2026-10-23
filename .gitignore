@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.venv/
+.cache/
+.cli/
+cdk.out/
+dist/
+node_modules/
+.env
+.env.*

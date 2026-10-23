@@ -1,0 +1,17 @@
+{
+  "description": "DEF shape, the spec plus four review fixes (2026-10-22): keep 'last resort' on the slide; give the defensive third as the summary's distToMyGoal under 35; keep the hold-shape bullet so the defender stays out of the opponent's half off the ball; spell out the 15-unit offset per side and cap it at halfway.",
+  "replace": [
+    {
+      "old": "- SLIDE_TACKLE as a last resort when an opponent threatens your goal and is close\n",
+      "new": "- SLIDE_TACKLE only as a last resort, at an opponent whose distToMyGoal is under 35. Never slide at a player in the opponent's half, on the sideline, or in the opponent's corner.\n"
+    },
+    {
+      "old": "- Hold your defensive shape; don't chase the ball into the opponent's half\n",
+      "new": "- Hold your defensive shape; don't chase the ball into the opponent's half\n- When your team has the ball, MOVE_TO target_y 0 and target_x 15 closer to your own goal than your most advanced teammate (HOME: that teammate's x - 15, AWAY: that teammate's x + 15), never past halfway (x = 0). Do not follow the ball, a wide teammate, or a wide opponent to the wing or the opponent's corner.\n"
+    },
+    {
+      "old": "distance (float) — risky aggressive tackle\n",
+      "new": "distance (float) — only in your own defensive third, opponent close to your goal, never the opponent's wing or corner\n"
+    }
+  ]
+}
